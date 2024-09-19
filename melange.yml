@@ -22,4 +22,4 @@ environment:
 pipeline:
   - name: Build Go application
     runs: |
-      CGO_ENABLED=0 go build -o "${{targets.destdir}}/bin/gocat" .
+      CGO_ENABLED=0 go build -v -trimpath -ldflags "-s -w" -o "${{targets.destdir}}/bin/gocat" .
