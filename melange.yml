@@ -13,11 +13,9 @@ environment:
       - https://dl-cdn.alpinelinux.org/alpine/edge/main
       - https://dl-cdn.alpinelinux.org/alpine/edge/community
     packages:
-      - alpine-baselayout-data
       - ca-certificates-bundle
       - busybox
       - go
-      - git
 
 pipeline:
   - name: Build Go application
